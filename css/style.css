@@ -49,6 +49,11 @@ body {
   background-position: center center;
 }
 
+.pop-up-container{
+  transition-duration: .5s;
+  transform:rotateX(90deg);
+}
+
 #pop-up .close-pop-up {
   position: absolute;
   top: 20px;
@@ -226,6 +231,7 @@ nav ul ul li {
 
 .article .article-content a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .article .article-content h3 {

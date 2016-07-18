@@ -13,110 +13,46 @@
 
   <header>
 
-    <!-- Header HTML -->
-    <!--
     <section class="wrapper">
-      <a href="#"><h1>Feedr</h1></a>
+      <a href="#"><h1 onclick="changeSource()">Feedr</h1></a>
       <nav>
         <section id="search">
-          <input type="text" name="name" value="">
-          <div id="search-icon"><img src="images/search.png" alt="" /></div>
+          <input id="search-input" type="text" name="name" value="">
+          <div id="search-icon"><img src="images/search.png" alt="Search" /></div>
         </section>
         <ul>
-          <li><a href="#">News Source: <span>Source Name</span></a>
-          <ul>
-            <li><a href="#">Source 1</a></li>
-            <li><a href="#">Source 2</a></li>
-            <li><a href="#">Source 3</a></li>
+          <li><a href="#">News Source: <span id="sourceName">Source Name</span></a>
+          <ul id="source-list">
           </ul>
           </li>
         </ul>
       </nav>
       <div class="clearfix"></div>
     </section>
-    -->
 
   </header>
 
   <div id="container">
 
-    <!-- Loader popup HTML -->
-    <!--
     <div id="pop-up" class="loader">
     </div>
-    -->
 
-    <!-- Article content popup HTML -->
-    <!--
-    <div id="pop-up">
-      <a href="#" class="close-pop-up">X</a>
+    <div id="pop-up" class="pop-up-container">
+      <a href="#" onclick="closePopup()" class="close-pop-up">X</a>
       <div class="wrapper">
-        <h1>Article title here</h1>
-        <p>
+        <h1><a id="articleDetailsTitle" href="#"></a></h1>
+        <h5 id="articleDetailsAuthor"></h5>
+        <h6 id="articleDetailsChannel"></h6>
+        <image id="articleDetailsImage" src="images/article_placeholder_1.jpg">
+        <p id="articleDetailsContent">
         Article description/content here.
         </p>
-        <a href="#" class="pop-up-action" target="_blank">Read more from source</a>
+        <a id="articleDetailsReference" href="#" class="pop-up-action" target="_blank">Read more from source</a>
       </div>
     </div>
-    -->
 
-    <!-- Example article list -->
-    <!--
     <section id="main" class="wrapper">
-      <article class="article">
-        <section class="featured-image">
-          <img src="images/article_placeholder_1.jpg" alt="" />
-        </section>
-        <section class="article-content">
-          <a href="#"><h3>Test article title</h3></a>
-          <h6>Lifestyle</h6>
-        </section>
-        <section class="impressions">
-          526
-        </section>
-        <div class="clearfix"></div>
-      </article>
-      <article class="article">
-        <section class="featured-image">
-          <img src="images/article_placeholder_2.jpg" alt="" />
-        </section>
-        <section class="article-content">
-          <a href="#"><h3>Test article title</h3></a>
-          <h6>Lifestyle</h6>
-        </section>
-        <section class="impressions">
-          526
-        </section>
-        <div class="clearfix"></div>
-      </article>
-      <article class="article">
-        <section class="featured-image">
-          <img src="images/article_placeholder_2.jpg" alt="" />
-        </section>
-        <section class="article-content">
-          <a href="#"><h3>Test article title</h3></a>
-          <h6>Lifestyle</h6>
-        </section>
-        <section class="impressions">
-          526
-        </section>
-        <div class="clearfix"></div>
-      </article>
-      <article class="article">
-        <section class="featured-image">
-          <img src="images/article_placeholder_1.jpg" alt="" />
-        </section>
-        <section class="article-content">
-          <a href="#"><h3>Test article title</h3></a>
-          <h6>Lifestyle</h6>
-        </section>
-        <section class="impressions">
-          526
-        </section>
-        <div class="clearfix"></div>
-      </article>
     </section>
-    -->
 
   </div>
 
